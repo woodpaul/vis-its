@@ -1,0 +1,25 @@
+@import "~slick-carousel/slick/slick.css";
+@import "slick-theme.css";
+
+.List {
+  flex: 1;
+}
+
+.List .slider-wrapper {
+  margin: 80px auto 0;
+  width: 582px
+}
+
+.List .slider-wrapper h3 {
+  margin: 0 0 10px -40px;
+}
+
+.List .slick-slider {
+  width: 100%;
+}
+
+.List .slick-slider img {
+  width: 176px!important;
+  height: 120px;
+  margin: 10px;
+}

@@ -1,0 +1,13 @@
+.Concept {
+  flex: 1;
+}
+
+.Concept article {
+  padding-top: 60px;
+}
+
+.Concept article p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}

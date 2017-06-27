@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans CJK JP"),
+    url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+  color: #000;
+}
+
+.App {
+  font-family: "Noto Sans JP";
+  display: flex;
+}
+
+.App header {
+  min-height: 187px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.App header h1 {
+  color: #424242;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.App main {
+  display: flex;
+  flex: 1;
+}
+
+.App .sidebar {
+  flex: 0 0 230px;
+  min-height: 100vh;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.App .sidebar img {
+  display: block;
+  width: 43px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.App nav {
+  text-align: center;
+}
+
+.App nav ul {
+  width: 74px;
+  list-style: none;
+  padding: 0;
+  margin: 85px auto;
+}
+
+.App nav ul li {
+  margin: 0 0 10px;
+}
+
+.App nav ul li a {
+  display: block;
+  position: relative;
+  color: #242424;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.App nav ul li a span {
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+
+.App nav ul li a:hover, .App nav ul li a:active {
+  color: #ff1654;
+}
+
+.App nav ul li a:hover:after, .App nav ul li a:active:after {
+  content: ' ';
+  display: block;
+  border-bottom: 2px solid #ddd;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+}
+
+.App nav ul li a.active:after {
+  content: ' ';
+  display: block;
+  border-bottom: 2px solid #ddd;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.App .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App .content header {
+  border: 0;
+  position: relative;
+}
+
+.App .content header:after {
+  content: '';
+  display: block;
+  width: 50px;
+  border-bottom: 4px solid #55a0c0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -25px;
+}
+
+.App .content header h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.App footer {
+  padding-right: 25px;
+  box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.10);
+  color: #c7c7c7;
+  font-size: 10px;
+  line-height: 26px;
+  text-align: right;
+}
